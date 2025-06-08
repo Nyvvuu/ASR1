@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font for the entire body to be Verdana */
+    margin: 0; /* no margin */
+    padding: 0; /* no padding needed */
+    background-color: #fff; /* sets background to white */
+    color: #333; /* sets the text to be a lighter black */
+  }
+  
+  img {
+    max-width: 100%; /* Sets it to be non construted picture width*/
+    height: auto; /* sets height to what is listed*/
+    display: block;/* Displays the image into a linear direction */
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #8a1538; /* Sets header color to scarlet */
+    padding: 10px 20px;/* padding around the headers */
+    color: white; /* sets the text inside the header to white */
+  }
+  
+  nav {
+    display: flex; /* uses flexbox in nav in the header */
+    align-items: center; /* sets items in the center */
+    justify-content: space-between; /* spaces the texts evenly in between */
+    flex-wrap: wrap; /* once the space runs out itll wrap and adjust size to page */
+  }
+  
+  .logo {
+    display: flex;/* uses flexbox for the logo */
+    align-items: center; /* centers the text logo to the senter height */
+    gap: 10px; /* dseperates a gap with the logo and the text */
+  }
+  
+  .logo img {
+    width: 50px; /* sets logo image to 50 px */
+    height: auto; /* auto set length to be adjusted to the header*/
+  }
+  
+  .nav-links {
+    list-style: none; /* removes bulles from the lists in the navigations*/ 
+    display: flex; /* puts the links in to a flexbox for appropiate fitting*/
+    gap: 15px; /* gap in betweek each navigation links */
+  }
+  
+  .nav-links li a {
+    color: white;/* sets the text to white */
+    text-decoration: none; /* removes underline from all the links and leaves the one its on*/
+    font-weight: bold; /* sets the links to bold */
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    text-decoration: underline; /* underhines the navigatiom when hovering */
+  }
+  
+  .login-button {
+    background-color: black;/* Sets header color to black */
+    padding: 5px 10px;/* Sets padding to all four corners of the button */
+    text-decoration: none;/* removes underline from all the links and leaves the one its on*/
+    font-weight: bold;/* sets the links to bold */
+  }
+  
+  /* Main Section */
+  .intro {
+    display: flex; /* puts into a flexbot */
+    flex-direction: column; /*centers everything in terms of the page */
+    align-items: center;/* centers the items in the intro */
+    text-align: center; /* centers the text*/
+  }
+
+  .intro-text {
+    max-width: 800px; /* trims the text to be only in the center of the page */
+    line-height: 1.5; /* spaces the home text to be 1.5 in between each line */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f5f5f5;/* Sets color   */
+    padding: 30px 20px;/* Sets padding to all four corners */
+    color: #333;/* sets the text to be a lighter black */
+  }
+  
+  .footer-content {
+    display: flex;/* lets all the text into a flexbox  */
+    flex-wrap: wrap;/* Sets to wrap the taxt in their respective divider  */
+    justify-content: space-between;/* Puts a space in  between all the context columns  */
+    gap: 20px;/* Gap inbetween all the text */
+  }
+  
+  .footer-section {
+    flex: 1 1 200px; /* sets the footer into the columns */
+  }
+  
+  
+  .footer-section ul {
+    list-style: none; /* removes bullet points from the footer in the lists*/
+    padding: 0;/* Sets padding to none */
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px; /* margins 5 px on the list on the footer*/
+  }
+  
+  .footer-bottom {
+    text-align: center; /* Sets the text in footer to the center */
+    padding-top: 20px;/* Sets padding  */
+    border-top: 1px solid #ccc; /* line for copy right*/
+    font-size: 0.9rem;/* Sets Specific font size on the text */
+    color: #777;/* Sets color of the text  */
+  }
